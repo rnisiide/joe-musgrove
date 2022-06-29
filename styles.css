@@ -11,3 +11,26 @@
 #aquisitionarea {
     display: none;
 }
+
+.transparent-header {
+    transition: background-color 1s;
+    background-color: none;
+
+}
+
+.visible-header {
+    transition: background-color 1s;
+    background-color: #0B355F;
+}
+
+.nav-link {
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    
+    background-color: peru;
+    color: pink
+}
+
+

@@ -11,12 +11,12 @@
 </head>
 <body>
 
-    <header class="bg-light">
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-md">
             <div class="container-xxl">
+                <h1 class="text-light">ATG LOGO</h1>
                 <a href="#intro " class="navbar-brand">
-                    <img src="./images/Antarctica_Travel_Group_9B_180x.webp" alt="ATG Home" width="150px">
-                    <span class="h1">Antarctica with Joe Musgrove</span>
+                    <p class="h2 px-3 text-light">Antarctica with Joe Musgrove</p>
                 </a>
                 <button 
                     class="navbar-toggler" 
@@ -32,19 +32,46 @@
                 <div class="collapse navbar-collapse justify-content-end allign-center" id="main-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Tours</a>
+                            <a href="#highlights" class="nav-link active text-light" aria-current="page">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">About ATG</a>
+                            <a href="#itinerary" class="nav-link text-light">Itinerary</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Sign-up</a>
+                            <a href="#pricing" class="nav-link text-light">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#boat" class="nav-link text-light">Boat information</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="#" class="nav-link text-light"><strong>Be a sponsor!</strong></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
+    </header> 
+
+   
+<!--         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top">
+          <div class="container d-flex justify-content-around align-items-center " >
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <h1>ATG LOGO</h1>
+                <span class="fs-4">Antarctica with Joe Musgrove
+                </span>
+              </a>
+
+              
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#highlights" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#itinerary" class="nav-link">Itinerary</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#boat" class="nav-link">Boat information</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Be a sponsor!</a></li>
+              </ul>
+          </div>
+        </header> -->
+  
 
       <!-- carousel slider  -->
 
@@ -59,10 +86,10 @@
             <img src="./images/joe musgrove.jpeg" class="d-block w-100" alt="Joe Musgrove">
           </div>
           <div class="carousel-item">
-            <img src="./images/tourist in antartica.jpg" class="d-block w-100" alt="Antartica Tourist">
+            <img src="./images/kayaker-at-iceberg.jpg" class="d-block w-100" alt="Kayaking in Antarctica">
           </div>
           <div class="carousel-item">
-            <img src="./images/penguin.jpeg" class="d-block w-100" alt="Cute penguin">
+            <img src="./images/penguin-colony.jpg" class="d-block w-100" alt="Penguin colony in Antarctica">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -104,7 +131,7 @@
 
     <section id="highlights">          
         <div class="text-center my-5">
-            <h2>Trip highlights</h2>    
+            <h1 class="h1"><u>Trip highlights</u></h1>    
         </div>
         <div class="container my-3 ">
             <p>Join Joe Musgrove on this unforgettable trip to Antarctica to support BeTheMatch.org</p>
@@ -121,7 +148,7 @@
 
      <section id="itinerary">
         <div class="text-center my-5">
-            <h2>Getting to Ushuaia and Trip Itinerary</h2>   
+            <h2><u>Getting to Ushuaia and Trip Itinerary</u></h2>   
         </div>
 
      <div class="container d-flex" id="map-picture">
@@ -325,7 +352,7 @@
        <div class="container-xxl">
         
             <div class="text-center my-5">
-                <h2>Cabins and pricing</h2>       
+                <h2><u>Cabins and pricing</u></h2>       
                 <a href="">CLICK HERE FOR DECK PLAN</a>
             </div>
 
@@ -426,7 +453,7 @@
 
 
      <section id="boat">
-         <h1 class="h1 my-3  text-center">About the ship</h1>
+         <h1 class="h1 my-3  text-center"><u>About the ship</u></h1>
          <div class="container d-flex" id="boat-picture">
             <div class="col-lg-5 m-3 text-center">
                 <img class="img-fluid" src="./images/ocean-victory-details.jpg" alt="">
@@ -682,7 +709,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Sign up for our trips!</h5>
+          <h5 class="modal-title h4">Sign up for our trips!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
