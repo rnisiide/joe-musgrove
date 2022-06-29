@@ -1,9 +1,22 @@
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 
-#map-picture {
-    display: flex;
-    flex-direction: column;
-}
+    #map-picture {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #big-picture {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #picture-container {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+
 }
 
 #otherconfigarea,
@@ -27,10 +40,21 @@
     border-radius: 10px;
 }
 
-.nav-link:hover {
-    
+.nav-link:hover {    
     background-color: peru;
-    color: pink
 }
 
+.picture {
+    height: 274px;
+}
 
+.teste {
+    height: 240px;
+    border: double;
+    border-color:violet;
+}
+
+.img-picture {
+    height: 100%;
+    object-fit: contain;
+}
