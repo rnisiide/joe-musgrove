@@ -3,6 +3,11 @@
 #map-picture {
     display: flex;
     flex-direction: column;
-
 }
+}
+
+#otherconfigarea,
+#othercabinarea,
+#aquisitionarea {
+    display: none;
 }

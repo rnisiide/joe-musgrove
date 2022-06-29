@@ -76,32 +76,37 @@
       </div>
 
       <section id="scrollnavigation">
-          <nav>
-            <a href="#itinerary" class="btn btn-primary">
-                <small>Itinerary</small> <br>
-                Classic Antarctica <br>
-                10 Days / 9 nights
-            </a>
           
-            <a href="#pricing" class="btn btn-primary">
-                <small>Price</small> <br>
-                from $ 6,990 <br>
-                to $ 11,990
-            </a>
-            <a href="#boat" class="btn btn-primary">
-                <small>Boat details</small> <br>
-                Ocean Victory <br>
-                Albatros Expeditions
-            </a>
-            <button class="btn btn-danger"> Sign up here!</button> <!-- open modal -->          
-          </nav>
+            <div class="container text-center">
+                <a href="#itinerary" class="btn btn-primary m-2">
+                    <small>Itinerary</small> <br>
+                    Classic Antarctica <br>
+                    10 Days / 9 nights
+                </a>
+                <a href="#pricing" class="btn btn-primary m-2">
+                    <small>Price</small> <br>
+                    from $ 6,990 <br>
+                    to $ 11,990
+                </a>
+                <a href="#boat" class="btn btn-primary m-2">
+                    <small>Boat details</small> <br>
+                    Ocean Victory <br>
+                    Albatros Expeditions
+                </a>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal"> <br>Sign up here!<br><br></button> <!-- open modal -->
+
+           
+            </div>     
+         
       </section>
     
 <!-- section 1: highlights -->
 
-    <section id="highlights">        
+    <section id="highlights">          
+        <div class="text-center my-5">
+            <h2>Trip highlights</h2>    
+        </div>
         <div class="container my-3 ">
-            <h1 class="h1 my-3  text-center">Trip highligts</h1>
             <p>Join Joe Musgrove on this unforgettable trip to Antarctica to support BeTheMatch.org</p>
 
             <p>Anyone who knows Joe would agree that other than baseball and coffee, Joe's two passions in life are connecting with his fans and supporting his community. </p>
@@ -114,9 +119,10 @@
 
      <!--  section 2: Duration and itinerary -->
 
-     <h1 class="h6 my-3 text-center bg-danger">SECTION BREAK - DURATION AND ITINERARY - CHANGE LATER</h1>
-
      <section id="itinerary">
+        <div class="text-center my-5">
+            <h2>Getting to Ushuaia and Trip Itinerary</h2>   
+        </div>
 
      <div class="container d-flex" id="map-picture">
         <div class="col-lg-5 m-3 text-center">
@@ -315,139 +321,604 @@
 
       <!--    section 3: Price -->
 
-   <h1 class="h6 my-3 text-center bg-danger">SECTION BREAK - PRICING - CHANGE LATER</h1>
-
    <section id="pricing">
        <div class="container-xxl">
         
-            <div class="text-center">
+            <div class="text-center my-5">
                 <h2>Cabins and pricing</h2>       
                 <a href="">CLICK HERE FOR DECK PLAN</a>
             </div>
 
-          <div class="container d-flex justify-content-around">
-              <div class="card my-3 d-flex" style="max-width: 1000px;">
-                <div class="card-header text-center"> <h4 class="card-title">F Triple - Porthole Cabin</h4></div>
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                        <p class="card-text my-2 mx-1 text-muted "> Located on deck 3, these cabins offer three lower twin beds, or a queen bed with a single bed. These are large cabins that are great for a group of traveling friends, solo travelers and families.</p>
-                        <p class="h3 my-3 mx-1 text-muted text-end"> $ 6,990</p>
-                        <div class="d-flex justify-content-end"><button class="btn btn-secondary">Book now!</button></div>
+            <div class="container d-flex justify-content-around">
+                <div class="card my-3 d-flex" style="max-width: 1000px;">
+                    <div class="card-header text-center"> <h4 class="card-title">F Triple - Porthole Cabin</h4></div>
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
                     </div>
-                  </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text my-2 mx-1 text-muted "> Located on deck 3, these cabins offer three lower twin beds, or a queen bed with a single bed. These are large cabins that are great for a group of traveling friends, solo travelers and families.</p>
+                            <p class="h3 my-3 mx-1 text-muted text-end"> $ 6,990</p>
+                            <div class="d-flex justify-content-end"><button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formModal">Book now!</button></div>
+                        </div>
+                    </div>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="container d-flex justify-content-around">
+                <div class="card my-3 d-flex" style="max-width: 1000px;">
+                <div class="card-header text-center"> <h4 class="card-title">D Twin - Porthole Cabin</h4></div>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
+                    <div class="mt-4 ms-2 text-danger">Only 2 cabins left!!</div>
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text my-2 mx-1 text-muted "> These cabins are the same as F cabins, but instead of a third bed, offer a sofa and sitting area. They are very spacious cabins located on deck 3. They offer a porthole in each cabin. </p>
+                        <p class="h3 my-3 mx-1 text-muted text-end"> $ 8,990</p>
+                        <div class="d-flex justify-content-end"><button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#formModal">Book now!</button></div>
+                    </div>
+                    </div>
                 </div>                
-              </div>
-          </div>
+                </div>
+            </div>
 
-          <div class="container d-flex justify-content-around">
-            <div class="card my-3 d-flex" style="max-width: 1000px;">
-              <div class="card-header text-center"> <h4 class="card-title">D Twin - Porthole Cabin</h4></div>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
-                  <div class="mt-4 ms-2 text-danger">Only 2 cabins left!!</div>
+            <div class="container d-flex justify-content-around">
+                <div class="card my-3 d-flex" style="max-width: 1000px;">
+                    <div class="card-header text-center"> <h4 class="card-title"> E - Twin French Balcony </h4></div>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text my-2 mx-1 text-muted "> These cabins offer a double sized bed and the possibility of a full sized sofa bed on. Located on deck 7. These are often referred to as a "false balcony" or "Infinity window". The room features a large floor to ceiling window, where the top half of the window slides down completely, given you the feeling of a balcony. </p>
+                                <p class="h3 my-3 mx-1 text-muted text-end"> $ 10,490 </p>
+                                <div class="d-flex justify-content-end"><button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#formModal">Book now!</button></div>
+                            </div>
+                            </div>
+                        </div>                
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                      <p class="card-text my-2 mx-1 text-muted "> These cabins are the same as F cabins, but instead of a third bed, offer a sofa and sitting area. They are very spacious cabins located on deck 3. They offer a porthole in each cabin. </p>
-                      <p class="h3 my-3 mx-1 text-muted text-end"> $ 8,990</p>
-                      <div class="d-flex justify-content-end"><button class="btn btn-secondary">Book now!</button></div>
-                  </div>
+            </div>
+
+            <div class="container d-flex justify-content-around">
+                <div class="card my-3 d-flex" style="max-width: 1000px;">
+                <div class="card-header text-center"> <h4 class="card-title">C - Twin Balcony Suite</h4></div>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text my-2 mx-1 text-muted "> A spacious balcony cabin that is offered on both deck four. The twin configuration of this cabin offers either two lower twin beds, or a large full/queen sized matrimonial style bed. These cabins offer a large walkout private balcony. </p>
+                        <p class="h3 my-3 mx-1 text-muted text-end"> $ 11,290</p>
+                        <div class="d-flex justify-content-end"><button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#formModal">Book now!</button></div>
+                    </div>
+                    </div>
+                </div>                
                 </div>
-              </div>                
+            </div>
+
+            <div class="container d-flex justify-content-around">
+                <div class="card my-3 d-flex" style="max-width: 1000px;">
+                    <div class="card-header text-center"> <h4 class="card-title">CT -Triple Balcony Suite</h4></div>
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                        <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text my-2 mx-1 text-muted "> These are the same as a C balcony suite but the sofa bed is pulled out to accommodate a third guest. These are offered on both decks 4 and deck 6. </p>
+                            <p class="h3 my-3 mx-1 text-muted text-end"> $ 9,490</p>
+                            <div class="d-flex justify-content-end"><button class="btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#formModal">Book now!</button></div>
+                        </div>
+                        </div>
+                    </div>                
+                </div>
             </div>
         </div>
-
-        <div class="container d-flex justify-content-around">
-            <div class="card my-3 d-flex" style="max-width: 1000px;">
-              <div class="card-header text-center"> <h4 class="card-title"> E - Twin French Balcony </h4></div>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                      <p class="card-text my-2 mx-1 text-muted "> These cabins offer a double sized bed and the possibility of a full sized sofa bed on. Located on deck 7. These are often referred to as a "false balcony" or "Infinity window". The room features a large floor to ceiling window, where the top half of the window slides down completely, given you the feeling of a balcony. </p>
-                      <p class="h3 my-3 mx-1 text-muted text-end"> $ 10,490 </p>
-                      <div class="d-flex justify-content-end"><button class="btn btn-secondary">Book now!</button></div>
-                  </div>
-                </div>
-              </div>                
-            </div>
-        </div>
-
-        <div class="container d-flex justify-content-around">
-            <div class="card my-3 d-flex" style="max-width: 1000px;">
-              <div class="card-header text-center"> <h4 class="card-title">C - Twin Balcony Suite</h4></div>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                      <p class="card-text my-2 mx-1 text-muted "> A spacious balcony cabin that is offered on both deck four. The twin configuration of this cabin offers either two lower twin beds, or a large full/queen sized matrimonial style bed. These cabins offer a large walkout private balcony. </p>
-                      <p class="h3 my-3 mx-1 text-muted text-end"> $ 11,290</p>
-                      <div class="d-flex justify-content-end"><button class="btn btn-secondary">Book now!</button></div>
-                  </div>
-                </div>
-              </div>                
-            </div>
-        </div>
-
-        <div class="container d-flex justify-content-around">
-            <div class="card my-3 d-flex" style="max-width: 1000px;">
-              <div class="card-header text-center"> <h4 class="card-title">CT -Triple Balcony Suite</h4></div>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./images/ocean-victory-cabin.jpg" class="my-2 img-fluid rounded-start" alt="Ocean Victory Cabin">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                      <p class="card-text my-2 mx-1 text-muted "> These are the same as a C balcony suite but the sofa bed is pulled out to accommodate a third guest. These are offered on both decks 4 and deck 6. </p>
-                      <p class="h3 my-3 mx-1 text-muted text-end"> $ 9,490</p>
-                      <div class="d-flex justify-content-end"><button class="btn btn-secondary">Book now!</button></div>
-                  </div>
-                </div>
-              </div>                
-            </div>
-        </div>
-
-
-
-
-
-       </div>
    </section>
-
-
- <!--      Section 4: Destination -->
- <h1 class="h6 my-3 text-center bg-danger">SECTION BREAK - CHANGE LATER</h1>
-
-
 
      <!--  Section 5: Boat Details -->
 
-     <h1 class="h6 my-3 text-center bg-danger">SECTION BREAK - CHANGE LATER</h1>
 
-     
+     <section id="boat">
+         <h1 class="h1 my-3  text-center">About the ship</h1>
+         <div class="container d-flex" id="boat-picture">
+            <div class="col-lg-5 m-3 text-center">
+                <img class="img-fluid" src="./images/ocean-victory-details.jpg" alt="">
+            </div>
+            <div class="col-lg-5 my-3">
+                <p>The unique X-bow was designed to pierce through the swell rather than ride over it, improving the ride in rough seas. The multiple disembarkation doors allow for quick, smooth and safe zodiac loading which means more time on land and exploring the Antarctica region. With 90% of the cabins offering balconies, and the ample outside view space; you're never far from observing the sites and wildlife of Antarctica. </p>
+                <p>The Ocean Victory build was completed in 2021 and immediately headed South to begin it's exploring of Antarctica for the 21/22 season. I spent 114 days on board during the 21/22 season and can attest to it's comfort, speed, stability and well thought out design. It is the highest rated ice class hull currently in the fleet. It also holds the title of the most environmentally friendly ship operating in the polar regions. It carries a maximum of 188 passengers, with 88 crew.</p>
+            </div>
+         </div>
+         <div class="container text-center">
+            <img class="img-fluid" src="./images/ocean-victory-deckplan.jpg" alt="Ocean Victory">
+         </div>
+     </section>
 
-     <div class="container" id="boat">
-        <p>About the Ship: The unique X-bow was designed to pierce through the swell rather than ride over it, improving the ride in rough seas. The multiple disembarkation doors allow for quick, smooth and safe zodiac loading which means more time on land and exploring the Antarctica region. With 90% of the cabins offering balconies, and the ample outside view space; you're never far from observing the sites and wildlife of Antarctica. </p>
-
-        <p>The Ocean Victory build was completed in 2021 and immediately headed South to begin it's exploring of Antarctica for the 21/22 season. I spent 114 days on board during the 21/22 season and can attest to it's comfort, speed, stability and well thought out design. It is the highest rated ice class hull currently in the fleet. It also holds the title of the most environmentally friendly ship operating in the polar regions. It carries a maximum of 188 passengers, with 88 crew.</p>
-
-        <img src="./images/ocean-victory-details.jpg" alt="Ocean Victory">
-     </div>
 
 
 
-    
+
+
+  <!--      Section 4: Form
+
+
+  <div class="container">
+      <form action="">
+      
+        <div class="mb-3 row">
+            <label for="name" class="col-sm-2 col-form-label">Full Name</label>
+            <div class="col-sm-6">
+            <input type="text" class="form-control" id="name">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+            <div class="col-sm-6">
+            <input type="email" class="form-control" id="email">
+            </div>
+        </div>
+                     
+        <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">How many guests are in your party?</legend>
+            <div class="col-sm-9">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber1" value="1">
+                <label class="form-check-label" for="paxnumber1">
+                  1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber2" value="2">
+                <label class="form-check-label" for="paxnumber2">
+                  2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber3" value="3">
+                <label class="form-check-label" for="paxnumber3">
+                  3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber4" value="4">
+                <label class="form-check-label" for="paxnumber4">
+                  4
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber5" value="5">
+                <label class="form-check-label" for="paxnumber5">
+                  5 or +
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Which cabin are you interested in?</legend>
+            <div class="col-sm-9">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabintype" id="ftrip" value="ftrip" onclick = "showCabin('N');">
+                <label class="form-check-label" for="ftrip">
+                    F - Triple Porthole - $6,990
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabintype" id="dtwin" value="dtwin" onclick = "showCabin('N');">
+                <label class="form-check-label" for="dtwin">
+                    D - Twin Pothole - $8,990
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabintype" id="etwin" value="etwin" onclick = "showCabin('N');">
+                <label class="form-check-label" for="etwin">
+                    E - Twin French Balcony - $10,490
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabintype" id="ctwin" value="ctwin" onclick = "showCabin('N');">
+                <label class="form-check-label" for="ctwin">
+                    C - Twin Balcony Suite - $11,290
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabintype" id="ctrip" value="ctrip"  onclick = "showCabin('N');">
+                <label class="form-check-label" for="ctrip">
+                    C - Triple Balcony Suite - $9,490
+                </label>
+              </div>
+              <div class="form-check">
+                <input 
+                class="form-check-input" 
+                type="radio" 
+                name="cabintype" 
+                id="othercabin" 
+                value="othercabin" 
+                onclick = "showCabin('Y');">
+                <label class="form-check-label" for="othercabin">
+                    Other
+                </label>
+              </div>
+              <div id="othercabinarea" class="my-3">
+                <textarea name="othercabintext" id="othercabintext" rows="3" cols="30" placeholder="What kind of cabin would you like?"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">What cabin configuration are you interested in?</legend>
+            <div class="col-sm-9">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabinconfig" id="solo-solo" value="solo-solo" onclick = "hideShow('N');">
+                <label class="form-check-label" for="solo-solo">
+                    I am a solo traveler who would like my own cabin
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabinconfig" id="solo-shared" value="solo-shared" onclick = "hideShow('N');">
+                <label class="form-check-label" for="solo-shared">
+                    I am a solo traveler who would like to share a cabin
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabinconfig" id="couple" value="couple" onclick = "hideShow('N');">
+                <label class="form-check-label" for="couple">
+                    I am traveling with a partner/spouse and would like a private cabin
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabinconfig" id="friends" value="friends" onclick = "hideShow('N');">
+                <label class="form-check-label" for="friends">
+                    I am traveling with friends/family and would love our own cabin
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="cabinconfig" id="group-shared" value="group-shared" onclick = "hideShow('N');">
+                <label class="form-check-label" for="group-shared">
+                    I am traveling with same gendered friends and family and am interested in sharing a cabin with other guests
+                </label>
+              </div>
+              <div class="form-check">
+                <input 
+                class="form-check-input" 
+                type="radio" 
+                name="cabinconfig" 
+                id="otherconfig" 
+                value="otherconfig" 
+                onclick = "hideShow('Y');">
+                <label class="form-check-label" for="otherconfig">
+                    Other
+                </label>
+              </div>
+              <div id="otherconfigarea" class="my-3">
+                <textarea name="otherconfigtext" id="otherconfigtext" rows="3" cols="30" placeholder="Please write how you want to travel!!"></textarea>
+              </div>             
+            </div>
+          </fieldset>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">How did you hear about us?</legend>
+            <div class="col-sm-9">
+                <select class="form-select" aria-label="Default select example" onchange="aquisitionShow(this.value);">
+                    <option selected disabled>How did you hear about us?</option>
+                    <option value="1">Antarctica Travel Group</option>
+                    <option value="2">The University Club San Diego</option>
+                    <option value="3">Joe Musgrove</option>
+                    <option value="4">Neill Drake</option>
+                    <option value="5">The Padres</option>
+                    <option value="6">Be the Match</option>
+                    <option value="7">Other</option>
+                </select>
+                <div id="aquisitionarea" class="my-3">
+                    <textarea name="otherconfigtext" id="otherconfigtext" rows="3" cols="30" placeholder="How did you hear about us?"></textarea>
+                  </div>             
+                </div>
+            
+          </fieldset>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Extra information</legend>
+            <div class="col-sm-9">
+                <textarea name="extra" id="extra" cols="40" rows="10" placeholder="Please let us know if you have any other information we should know, any questions or just tell us a bit about yourself."></textarea>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Do you give ATG, Be The Match, Albatros Expeditions permission to contact you via email?</legend>
+            <div class="col-sm-9">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="permission" id="permissionyes" value="yes">
+                <label class="form-check-label" for="permissionyes">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="permission" id="permissionno" value="no">
+                <label class="form-check-label" for="permissionno">
+                  No
+                </label>
+              </div>              
+            </div>
+          </fieldset>
+
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Terms and conditions</legend>
+              <div class="form-check col-sm-9">
+                <input class="form-check-input" type="checkbox" value="yes" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  I have read and agreed to the <a href="https://albatros-expeditions.com/terms-conditions?fbclid=IwAR0GoxcLUg0k4VnxuwFZcRc0sy5L3ykGejJG65qM7NQHShryaJ-HiZcjGAM">Antarctica Travel Group and Albatros Expeditions terms and conditions</a>. <br>
+                  I am signing on behalf of all members in your party.
+                </label>
+              </div>
+          </fieldset>
+
+          <fieldset class="row mb-3">
+            <div class="col-form-label col-sm-2 pt-0"></div>
+            <div class="form-check col-sm-9">
+                <input type="submit" class="btn btn-primary">
+            </div>
+            </fieldset>
+      </form>
+  </div>
+
+ -->
+
+
+
+
+
+ <!--      Section 5: Modal -->
+
+ <div class="modal" id="formModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sign up for our trips!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+      
+                <div class="mb-3 row">
+                    <label for="name" class="col-sm-2 col-form-label">Full Name</label>
+                    <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+        
+                <div class="mb-3 row">
+                    <label for="email" class="col-sm-2 col-form-label">E-mail</label>
+                    <div class="col-sm-6">
+                    <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                             
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">How many guests are in your party?</legend>
+                    <div class="col-sm-9">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber1" value="1">
+                        <label class="form-check-label" for="paxnumber1">
+                          1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber2" value="2">
+                        <label class="form-check-label" for="paxnumber2">
+                          2
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber3" value="3">
+                        <label class="form-check-label" for="paxnumber3">
+                          3
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber4" value="4">
+                        <label class="form-check-label" for="paxnumber4">
+                          4
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paxnumber" id="paxnumber5" value="5">
+                        <label class="form-check-label" for="paxnumber5">
+                          5 or +
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+        
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Which cabin are you interested in?</legend>
+                    <div class="col-sm-9">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabintype" id="ftrip" value="ftrip" onclick = "showCabin('N');">
+                        <label class="form-check-label" for="ftrip">
+                            F - Triple Porthole - $6,990
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabintype" id="dtwin" value="dtwin" onclick = "showCabin('N');">
+                        <label class="form-check-label" for="dtwin">
+                            D - Twin Pothole - $8,990
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabintype" id="etwin" value="etwin" onclick = "showCabin('N');">
+                        <label class="form-check-label" for="etwin">
+                            E - Twin French Balcony - $10,490
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabintype" id="ctwin" value="ctwin" onclick = "showCabin('N');">
+                        <label class="form-check-label" for="ctwin">
+                            C - Twin Balcony Suite - $11,290
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabintype" id="ctrip" value="ctrip"  onclick = "showCabin('N');">
+                        <label class="form-check-label" for="ctrip">
+                            C - Triple Balcony Suite - $9,490
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input 
+                        class="form-check-input" 
+                        type="radio" 
+                        name="cabintype" 
+                        id="othercabin" 
+                        value="othercabin" 
+                        onclick = "showCabin('Y');">
+                        <label class="form-check-label" for="othercabin">
+                            Other
+                        </label>
+                      </div>
+                      <div id="othercabinarea" class="my-3">
+                        <textarea name="othercabintext" id="othercabintext" rows="3" cols="30" placeholder="What kind of cabin would you like?"></textarea>
+                      </div>
+                    </div>
+                  </fieldset>
+        
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">What cabin configuration are you interested in?</legend>
+                    <div class="col-sm-9">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabinconfig" id="solo-solo" value="solo-solo" onclick = "hideShow('N');">
+                        <label class="form-check-label" for="solo-solo">
+                            I am a solo traveler who would like my own cabin
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabinconfig" id="solo-shared" value="solo-shared" onclick = "hideShow('N');">
+                        <label class="form-check-label" for="solo-shared">
+                            I am a solo traveler who would like to share a cabin
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabinconfig" id="couple" value="couple" onclick = "hideShow('N');">
+                        <label class="form-check-label" for="couple">
+                            I am traveling with a partner/spouse and would like a private cabin
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabinconfig" id="friends" value="friends" onclick = "hideShow('N');">
+                        <label class="form-check-label" for="friends">
+                            I am traveling with friends/family and would love our own cabin
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="cabinconfig" id="group-shared" value="group-shared" onclick = "hideShow('N');">
+                        <label class="form-check-label" for="group-shared">
+                            I am traveling with same gendered friends and family and am interested in sharing a cabin with other guests
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input 
+                        class="form-check-input" 
+                        type="radio" 
+                        name="cabinconfig" 
+                        id="otherconfig" 
+                        value="otherconfig" 
+                        onclick = "hideShow('Y');">
+                        <label class="form-check-label" for="otherconfig">
+                            Other
+                        </label>
+                      </div>
+                      <div id="otherconfigarea" class="my-3">
+                        <textarea name="otherconfigtext" id="otherconfigtext" rows="3" cols="30" placeholder="Please write how you want to travel!!"></textarea>
+                      </div>             
+                    </div>
+                  </fieldset>
+        
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">How did you hear about us?</legend>
+                    <div class="col-sm-9">
+                        <select class="form-select" aria-label="Default select example" onchange="aquisitionShow(this.value);">
+                            <option selected disabled>How did you hear about us?</option>
+                            <option value="1">Antarctica Travel Group</option>
+                            <option value="2">The University Club San Diego</option>
+                            <option value="3">Joe Musgrove</option>
+                            <option value="4">Neill Drake</option>
+                            <option value="5">The Padres</option>
+                            <option value="6">Be the Match</option>
+                            <option value="7">Other</option>
+                        </select>
+                        <div id="aquisitionarea" class="my-3">
+                            <textarea name="otherconfigtext" id="otherconfigtext" rows="3" cols="30" placeholder="How did you hear about us?"></textarea>
+                          </div>             
+                        </div>
+                    
+                  </fieldset>
+        
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Extra information</legend>
+                    <div class="col-sm-9">
+                        <textarea name="extra" id="extra" cols="40" rows="10" placeholder="Please let us know if you have any other information we should know, any questions or just tell us a bit about yourself."></textarea>
+                    </div>
+                  </fieldset>
+        
+        
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Do you give ATG, Be The Match, Albatros Expeditions permission to contact you via email?</legend>
+                    <div class="col-sm-9">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="permission" id="permissionyes" value="yes">
+                        <label class="form-check-label" for="permissionyes">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="permission" id="permissionno" value="no">
+                        <label class="form-check-label" for="permissionno">
+                          No
+                        </label>
+                      </div>              
+                    </div>
+                  </fieldset>
+        
+                  <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Terms and conditions</legend>
+                      <div class="form-check col-sm-9">
+                        <input class="form-check-input" type="checkbox" value="yes" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          I have read and agreed to the <a href="https://albatros-expeditions.com/terms-conditions?fbclid=IwAR0GoxcLUg0k4VnxuwFZcRc0sy5L3ykGejJG65qM7NQHShryaJ-HiZcjGAM">Antarctica Travel Group and Albatros Expeditions terms and conditions</a>. <br>
+                          I am signing on behalf of all members in your party.
+                        </label>
+                      </div>
+                  </fieldset>
+        
+                  <fieldset class="row mb-3">
+                    <div class="col-form-label col-sm-2 pt-0"></div>
+                    <div class="d-flex text-end form-check col-sm-9">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-primary">
+                    </div>
+                    </fieldset>
+
+                    
+              </form>        
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+   <!--      Section 4: Form -->
+ <h1 class="h6 my-3 text-center bg-danger">SECTION BREAK - CHANGE LATER</h1>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
