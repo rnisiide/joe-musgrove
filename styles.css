@@ -1,6 +1,89 @@
+#otherconfigarea,
+#othercabinarea,
+#aquisitionarea {
+    display: none;
+}
+
+
+.visible-header {
+    transition: background-color 1s;
+    background-color: #0B355F;
+}
+
+.nav-link {
+    border-radius: 10px;
+}
+
+.nav-link:hover {    
+    background-color: peru;
+}
+
+
+
+.img-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.home .carousel-item {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.home .carousel-item .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.carouseltext,
+.ATG-logo {
+    color: white;
+    text-shadow: 1px 1px #5e5e5e
+}
+
+.nav-link {
+    text-align: center;
+    text-shadow: 1px 1px #5e5e5e
+}
+
+
+#wrapper-teste {
+    display: flex;
+}
+
+#coluna1,
+#coluna2 {
+    width: 100%;
+    display: flex;
+}
+
+.foto {
+    height: 100%;
+    width: 100%;
+}
+
+
+.circlebutton {
+    width: 40px;
+    height: 40px;
+    border: solid;
+    border-color: white;
+
+}
+
+
 @media (max-width: 1000px) {
 
-    #map-picture {
+    #map-picture,
+    #boat-picture {
         display: flex;
         flex-direction: column;
     }
@@ -17,44 +100,24 @@
     }
 
 
+    #wrapper-teste {
+        display: flex;
+        flex-direction: column;
+    }   
+
+
+    #coluna1,
+    #coluna2 {
+        flex-direction: row;     
+    }
 }
 
-#otherconfigarea,
-#othercabinarea,
-#aquisitionarea {
-    display: none;
-}
+@media screen and (max-width: 600px) { 
 
-.transparent-header {
-    transition: background-color 1s;
-    background-color: none;
 
-}
-
-.visible-header {
-    transition: background-color 1s;
-    background-color: #0B355F;
-}
-
-.nav-link {
-    border-radius: 10px;
-}
-
-.nav-link:hover {    
-    background-color: peru;
-}
-
-.picture {
-    height: 274px;
-}
-
-.teste {
-    height: 240px;
-    border: double;
-    border-color:violet;
-}
-
-.img-picture {
-    height: 100%;
-    object-fit: contain;
+    #coluna1,
+    #coluna2 {
+        flex-direction: column;       
+    }
+    
 }
