@@ -31,7 +31,6 @@
     min-height: 100vh;
     background-position: center;
     background-size: cover;
-    opacity: 0.8;
 }
 
 .home .carousel-item .container {
@@ -45,14 +44,13 @@
 
 .carouseltext,
 .ATG-logo {
-    text-shadow: 2px 2px #5e5e5e
+    text-shadow: 3px 3px #5e5e5e
 }
 
 .nav-link {
     text-align: center;
     text-shadow: 1px 1px #5e5e5e
 }
-
 
 #wrapper-teste {
     display: flex;

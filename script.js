@@ -34,4 +34,20 @@ window.onscroll = function() {
     document.getElementsByTagName("header")[0].classList.remove("visible-header");
   }
 }; 
-  
+
+const sponsor = document.getElementById('sponsor');
+const sponsorButton = document.getElementById('sponsor-button')
+
+sponsor.addEventListener('click', () => {
+  let code = prompt('Please type code to enter Sponsor Area');
+  if (code == 'neillsucks') {alert('Yes, Neill Sucks!! You will be redirected to the sponsor area')}
+  else {alert('Wrong code!!!')}
+})
+
+sponsorButton.addEventListener('click', () => {
+  let code = prompt('Please type code to enter Sponsor Area');
+  if (code == 'neillsucks') {alert('Yes, Neill Sucks!! You will be redirected to the sponsor area')}
+  else {alert('Wrong code!!!')}
+})
+
+
